@@ -1,4 +1,4 @@
-using System;
+using FizzBuzzTdd.Domain;
 using Xunit;
 
 namespace FizzBuzzTdd.UnitTests
@@ -6,7 +6,7 @@ namespace FizzBuzzTdd.UnitTests
     public class FizzBuzzUnitTests
     {
         [Fact]
-        public void Buzzer_When1_Returns1() // [MethodUnderTest]_[Scenario]_[ExpectedResult]
+        public void FizzBuzz_When1_Returns1()
         {
             FizzBuzz sut = new FizzBuzz();
         }
