@@ -4,9 +4,12 @@ namespace FizzBuzzTdd.Domain
 {
     public class FizzBuzz
     {
-        public string GetValue(string input)
+        public string GetValue(int input)
         {
-            return input;
+            if (input % 3 == 0)
+                return "FIZZ";
+
+            return input.ToString();
         }
     }
 }
