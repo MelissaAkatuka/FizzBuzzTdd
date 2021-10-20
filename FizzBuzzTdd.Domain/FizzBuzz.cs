@@ -4,9 +4,9 @@ namespace FizzBuzzTdd.Domain
 {
     public class FizzBuzz
     {
-        public string GetValue(string expected)
+        public string GetValue(string input)
         {
-            return "1";
+            return input;
         }
     }
 }
