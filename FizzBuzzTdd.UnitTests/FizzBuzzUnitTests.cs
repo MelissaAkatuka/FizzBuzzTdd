@@ -6,10 +6,10 @@ namespace FizzBuzzTdd.UnitTests
     public class FizzBuzzUnitTests
     {
         private FizzBuzz sut;
+        
         public FizzBuzzUnitTests()
 	    {
             sut = new FizzBuzz();
-
 	    }
 
         [Fact]
@@ -36,11 +36,9 @@ namespace FizzBuzzTdd.UnitTests
 
             // Assert
             Assert.Equal("2", actual);
-
         }
 
         [Fact]
-
         public void FizzBuzz_When3_ReturnFizz()
         {
             //Arrange
@@ -53,5 +51,30 @@ namespace FizzBuzzTdd.UnitTests
             Assert.Equal("FIZZ", actual);
         }
 
+        [Fact]
+        public void FizzBuzz_When5_ReturnBuzz()
+        {
+            //Arrange            
+            var expected = "BUZZ";
+
+            //Act
+            var actual = sut.GetValue(5);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void FizzBuzz_When0_ReturnFizzBuzz()
+        {
+            //Arrange            
+            var expected = "FIZZBUZZ";
+
+            //Act
+            var actual = sut.GetValue(0);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
