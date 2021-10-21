@@ -42,13 +42,13 @@ namespace FizzBuzzTdd.UnitTests
         public void FizzBuzz_When3_ReturnFizz()
         {
             //Arrange
-            var expected = 3;
+            var expected = "FIZZ";
 
             //Act
-            var actual = sut.GetValue(expected);
+            var actual = sut.GetValue(3);
 
             //Assert
-            Assert.Equal("FIZZ", actual);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
